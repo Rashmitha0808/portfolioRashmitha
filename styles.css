@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111111;
   color: #fff;
 }
 /* !============Global============ */
@@ -72,6 +71,8 @@ nav ul li a:hover::after {
 }
 /* About */
 #about {
+  background-color: #413f3f;
+
   padding: 80px 0;
   color: #ababab;
 }
@@ -91,11 +92,12 @@ nav ul li a:hover::after {
 .about-col-2 {
   flex-basis: 60%;
 }
-.about-heading {
-  font-size: 60px;
+.sub-title {
+  font-size: 40px;
   font-weight: 600;
   color: #fff;
 }
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -173,8 +175,9 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 /* Portfolio */
-#portfolio {
+#project {
   padding: 50px 0;
+  background-color: #000;
 }
 .project-list {
   display: grid;
@@ -250,6 +253,9 @@ nav ul li a:hover::after {
   background: #ff004f;
 }
 /* Contact */
+#contact {
+  background-color: #413f3f;
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -366,10 +372,7 @@ form textarea {
     top: 220px;
     font-size: 1rem;
   }
-  .sub-title,
-  .about-heading {
-    font-size: 40px;
-  }
+
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
