@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/30b8960b8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--! =======================Nav section======================== -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.jpg" class="logo">
+
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fas fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Rashmitha</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!--! =======================Closing Nav section======================== -->
+    
+
+
+    <!--! =======================About section======================== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-heading">About me</h1>
+                    <p>Enthusiastic learner with nearly one-year experience of
+                         learning at Newton School, specializing in designing 
+                         and developing scalable web applications. Proficient in 
+                         front-end technologies, DSA, and effective communication, 
+                         enabling collaborative delivery of
+                         high-quality solutions with cross-functional teams.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web app interface</li>
+                            <li><span>Web development</span><br>Web app Development</li>
+                            <li><span>App development</span><br>Building android/iOs apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2020-2022</span><br>Operational Associate</li>
+                            <li><span>2022-2023</span><br>Analyst <br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! =======================Closing About section======================== -->
+
+
+    
+    <!--! =======================project section======================== -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/signUp.png" alt="">
+                    <div class="layer">
+                        <h3>TicTok Game App</h3>
+                        <p>The app is simple to play tic-tok-toy with easy acess.</p>
+                        <a href="https://rashmitha0808.github.io/ticTok/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="img/hotel.png" alt="">
+                    <div class="layer">
+                        <h3>Fusion Fare App</h3>
+                        <p>Theme is hotel and this app is having animation effects which attracts the UI.</p>
+                        <a href="https://rashmitha0808.github.io/hotel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="img/movieBk.png" alt="">
+                    <div class="layer">
+                        <h3>My Movie App</h3>
+                        <p>The app is all about ticket booking application of movie.</p>
+                        <a href="https://rashmitha0808.github.io/Movie-Booking-Application---Javascript-Project---i6mlgaryshda/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!--! =======================Closing project section======================== -->
+   
+
+
+    <!--! =======================Contact section======================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rashmikulal831@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>**0206****</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rashmitha-k-rashmithatkulal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/rashmitha-k-rashmithatkulal/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rashmitha-k-rashmithatkulal/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rashmitha-k-rashmithatkulal/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/Rashmitha.2023.pdf" download class="btn cv-btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn msg-btn sbmt-btn ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Rashmitha 2023</p>
+        </div>
+    </div>
+    <!--! =======================Closing Contact section======================== -->
+<script src="script.js"></script>
+</body>
+</html>
