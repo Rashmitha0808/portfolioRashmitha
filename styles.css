@@ -255,6 +255,7 @@ nav ul li a:hover::after {
 /* Contact */
 #contact {
   background-color: #413f3f;
+  padding-top: 30px;
 }
 .contact-left {
   flex-basis: 35%;
@@ -349,8 +350,9 @@ form textarea {
   font-weight: 300;
   margin-top: 20px;
 }
-.fas {
+nav .fas {
   display: none;
+  font-size: 25px;
 }
 /* Css for small screen */
 
@@ -422,6 +424,26 @@ form textarea {
   }
   .copyright {
     font-size: 14px;
+  }
+  .btn-up {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+    font-family: inherit;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 385px) {
+  #header {
+    background-image: url(img/profile.-mbl.jpg);
+    position: relative;
+  }
+  .header-text {
+    position: absolute;
+    top: -350px;
+    bottom: 0;
+    font-size: 5px;
   }
 }
 /* message sent */
