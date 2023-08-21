@@ -270,6 +270,11 @@ nav ul li a:hover::after {
   margin-right: 15px;
   font-size: 25px;
 }
+.contact-email,
+.contact-tel {
+  text-decoration: none;
+  color: #fff;
+}
 .social-icons {
   margin-top: 30px;
 }
@@ -311,6 +316,27 @@ form textarea {
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+}
+.btn-up {
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+.btn-up a {
+  text-decoration: none;
+  color: #000;
+}
+.btn-up:hover {
+  background: #ff004f;
+  color: #fff;
 }
 .copyright {
   width: 100%;
