@@ -297,6 +297,9 @@ nav ul li a:hover::after {
 .contact-right form {
   width: 100%;
 }
+form textarea {
+  resize: none;
+}
 form input,
 form textarea {
   width: 100%;

@@ -40,3 +40,23 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 })
 // message sent
+
+
+// Slide window
+
+// const projectList = document.querySelector('.project-list');
+// const projects = document.querySelectorAll('.project');
+// let currentIndex = 0;
+
+// function slideNext() {
+//     currentIndex = (currentIndex + 1) % projects.length;
+//     updateSlide();
+// }
+
+// function updateSlide() {
+//     const offsetX = -currentIndex * projects[0].clientWidth;
+//     projectList.style.transform = `translateX(${offsetX}px)`;
+// }
+
+// // Auto slide every 3 seconds
+// setInterval(slideNext, 3000);
