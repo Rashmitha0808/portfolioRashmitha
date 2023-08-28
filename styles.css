@@ -356,7 +356,7 @@ nav .fas {
 }
 /* Css for small screen */
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1213px) {
   #header {
     background-image: url(img/cropped.jpg);
   }
@@ -434,16 +434,21 @@ nav .fas {
     font-weight: 400;
   }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 699px) {
   #header {
     background-image: url(img/profile.-mbl.jpg);
     position: relative;
   }
   .header-text {
-    position: absolute;
-    top: -350px;
+    /* position: absolute; */
+    top: -250px;
     bottom: 0;
     font-size: 5px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header-text h1 {
+    font-size: 1rem;
   }
 }
 /* message sent */
