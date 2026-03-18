@@ -22,24 +22,49 @@ function openMenu() {
 function closeMenu() {
     sideMenu.style.right = "-200px";
 }
-// Contact script 
-const scriptURL = 'https://script.google.com/macros/s/AKfycby0Myk8JklTtKHMWyYzr6DsKuoOLeVCArdtfC8seH9awaJlI74amtLQNSnEs5l01cHx9w/exec'
-const form = document.forms['submit-to-google-sheet']
-const message = document.getElementById("msg");
+// Contact script
+const scriptURL = 'https://script.google.com/macros/s/AKfycby0Myk8JklTtKHMWyYzr6DsKuoOLeVCArdtfC8seH9awaJlI74amtLQNSnEs5l01cHx9w/exec';
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            message.innerHTML = "Message has been sent to Rashmitha";
-            setTimeout(function () {
-                message.innerHTML = ""
-            }, 5000)
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.forms['submit-to-google-sheet'];
+  const message = document.getElementById('msg');
+
+  if (!form) {
+    console.error('Contact form not found. Check the form name attribute.');
+    return;
+  }
+
+  if (!message) {
+    console.error('Message element #msg not found.');
+    return;
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    message.textContent = 'Sending...';
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
+        message.textContent = 'Message has been sent to Rashmitha.';
+        form.reset();
+        setTimeout(() => {
+          message.textContent = '';
+        }, 5000);
+      })
+      .catch(error => {
+        console.error('Error!', error);
+        message.textContent = 'Sorry, message not sent. Please try again or email directly.';
+      });
+  });
+});
 // message sent
+
 
 
 // Slide window
